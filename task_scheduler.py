@@ -14,9 +14,9 @@ class TaskScheduler:
         self.titulo = input("[i] - Digite um título para o Alarme:\n> ")
         while True:
             r = input(f"\n[i] - Deseja marcar um despertador (dia)rio ou (sem)anal {self.nome}?\n> ")
-            if r == 'dia' or 'd':
+            if r == 'dia' or 'd' or 'diario':
                 self.diario()
-            elif r == 'sem' or 's':
+            elif r == 'sem' or 's' or 'semanal':
                 self.semanal()
             else:
                 print(f"[x] - Lamento {self.nome}.. Você precisa digitar [dia ou sem] para iniciar o seu despertador!")
