@@ -1,3 +1,7 @@
+"""
+criando um modulo interno para reproducao de audios do tipo (.wav)
+"""
+
 import pyaudio
 import wave
 import sys
@@ -9,7 +13,7 @@ def reprodutor():
 -------------------------------------------------------
 """)
     CHUNK = 1024
-    AUDIO = "../sound/Idrada.wav"
+    AUDIO = "../sound/Idrada.wav" # nome e localizacao do ficheiro!
 
     # definindo a localização do audio para a sua leitura
     wf = wave.open(AUDIO, 'rb')
