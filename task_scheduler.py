@@ -1,4 +1,4 @@
-from rWav.reprodutorWAV import reprodutor
+from rwav.reprodutor import reprodutor
 from schedule import *
 
 
