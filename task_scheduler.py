@@ -2,14 +2,14 @@ from rwav.reprodutor import reprodutor
 from schedule import *
 
 
-class DespertadorGC:
-    """DespertadorGC"""
+class TaskScheduler:
+    """Agendador de tarefas"""
     def __init__(self):
         print("""
     **********************
-    *        dGC         *
+    *        TsC         *
     **********************
-""")
+    """)
         self.nome = input("[i] - Digite o seu Nome:\n> ")
         self.titulo = input("[i] - Digite um título para o Alarme:\n> ")
         while True:
@@ -79,8 +79,8 @@ class DespertadorGC:
     def funcao(self):
         """função responsavel pelos detalhes da execução"""
         print(f"[!!] - Executando Alarme {self.titulo} definido por {self.nome}...")
-        reprodutor()
+        reprodutor() # adicionando um som(zinho) pra cuiar mais!
 
 
 if __name__ == '__main__':
-    DespertadorGC()
+    TaskScheduler()
